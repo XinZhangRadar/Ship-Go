@@ -18,7 +18,7 @@ The DDPM model requires significant computational resources, and we have only bu
 
 | Dataset   | Task       |  Epochs    | GPUs×Days×Bs | URL                                                          |
 | --------- | ---------- | ---------- | ------------ | ------------------------------------------------------------ |
-| SSDD      | Painting   | 5000       | 1×5×2        | [Google Drive](https://drive.google.com/drive/folders/13YZ2UAmGJ-b7DICr-FDAPM7gctreJEoH?usp=sharing) |
+| SSDD      | Painting   | 5000       | 1×5×2        | [Google Drive](https://drive.google.com/drive/folders/1ZhGBmnmGNdDClcEhsAUMR3SdxK3IM-PQ) |
 
 **Bs** indicates sample size per gpu.
 
