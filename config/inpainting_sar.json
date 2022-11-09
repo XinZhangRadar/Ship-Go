@@ -1,6 +1,6 @@
 {
     "name": "inpainting_celebahq", // experiments name
-    "gpu_ids": [0], // gpu ids list, default is single 0
+    "gpu_ids": [0,1], // gpu ids list, default is single 0
     "seed" : -1, // random seed, seed <0 represents randomization not used 
     "finetune_norm": false, // find the parameters to optimize
 
@@ -10,8 +10,8 @@
         "tb_logger": "tb_logger", // path of tensorboard logger
         "results": "results",
         "checkpoint": "checkpoint",
-        "resume_state": "experiments/train_inpainting_celebahq_220426_233652/checkpoint/200" 
-        // "resume_state": null // ex: 100, loading .state  and .pth from given epoch and iteration
+        "resume_state": "experiments/train_inpainting_celebahq_220929_001020/checkpoint/200" 
+        //"resume_state": null // ex: 100, loading .state  and .pth from given epoch and iteration
     },
 
     "datasets": { // train or test
@@ -19,11 +19,12 @@
             "which_dataset": {  // import designated dataset using arguments 
                 "name": ["data.dataset", "InpaintDataset"], // import Dataset() class / function(not recommend) from data.dataset.py (default is [data.dataset.py])
                 "args":{ // arguments to initialize dataset
-                    "data_root": "datasets/celebahq/flist/train.flist",
+                    "data_root": "datasets/sargen/flist/train.flist",
                     "data_len": -1,
                     "mask_config": {
                         "mask_mode": "hybrid"
-                    }
+                    },
+                    "image_size":[512, 512]
                 } 
             },
             "dataloader":{
@@ -48,7 +49,7 @@
             "which_dataset": {
                 "name": "InpaintDataset", // import Dataset() class / function(not recommend) from default file
                 "args":{
-                    "data_root": "datasets/celebahq/flist/test.flist",
+                    "data_root": "datasets/sargen/flist/test.flist",
                     "mask_config": {
                         "mask_mode": "hybrid" //center | free_form | irregular | hybrid | bbox
                     }

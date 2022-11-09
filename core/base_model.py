@@ -137,6 +137,7 @@ class BaseModel():
 
     def resume_training(self):
         """ resume the optimizers and schedulers for training, only work when phase is test or resume training enable """
+        #import pdb;pdb.set_trace()
         if self.phase!='train' or self. opt['path']['resume_state'] is None:
             return
         self.logger.info('Beign loading training states'.format())

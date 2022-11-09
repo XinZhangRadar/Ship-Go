@@ -529,6 +529,7 @@ class UNet(nn.Module):
         :param gammas: a 1-D batch of gammas.
         :return: an [N x C x ...] Tensor of outputs.
         """
+
         hs = []
         gammas = gammas.view(-1, )
         emb = self.cond_embed(gamma_embedding(gammas, self.inner_channel))

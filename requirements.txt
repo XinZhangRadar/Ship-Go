@@ -1,4 +1,4 @@
-torch>=1.6
+torch==1.6
 torchvision
 numpy
 pandas

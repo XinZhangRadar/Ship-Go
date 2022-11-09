@@ -123,6 +123,30 @@ def bbox2mask(img_shape, bbox, dtype='uint8'):
     return mask
 
 
+def bboxes2mask(img_shape, bboxes, dtype='uint8'):
+    """Generate mask in ndarray from bbox.
+
+    The returned mask has the shape of (h, w, 1). '1' indicates the
+    hole and '0' indicates the valid regions.
+
+    We prefer to use `uint8` as the data type of masks, which may be different
+    from other codes in the community.
+
+    Args:
+        img_shape (tuple[int]): The size of the image.
+        bbox (tuple[int]): Configuration tuple, (top, left, height, width)
+        dtype (str): Indicate the data type of returned masks. Default: 'uint8'
+
+    Return:
+        numpy.ndarray: Mask in the shape of (h, w, 1).
+    """
+
+    height, width = img_shape[:2]
+
+    mask = np.ones((height, width, 1), dtype=dtype)
+    for bbox in bboxes:
+        mask[bbox[1]:bbox[3], bbox[0]:bbox[2], :] = 0
+    return mask
 def brush_stroke_mask(img_shape,
                       num_vertices=(4, 12),
                       mean_angle=2 * math.pi / 5,

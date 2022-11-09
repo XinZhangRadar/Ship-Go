@@ -28,6 +28,7 @@ def init_obj(opt, logger, *args, default_file_name='default file', given_module=
     else:
         file_name, class_name = default_file_name, name
     try:
+        #import pdb;pdb.set_trace()
         if given_module is not None:
             module = given_module
         else:
