@@ -64,14 +64,6 @@ We test the U-Net backbone used in `SR3` and `Guided Diffusion`,  and `Guided Di
 python run.py -p test -c config/inpainting_celebahq.json
 ```
 
-### Evaluation
-1. Create two folders saving ground truth images and sample images, and their file names need to correspond to each other.
-
-2. Run the script:
-
-```python
-python eval.py -s [ground image path] -d [sample image path]
-```
 
 # Ship-Go
 # Ship-Go
