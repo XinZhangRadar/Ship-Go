@@ -20,6 +20,7 @@ This is an official implementation of **Ship-Go: SAR Ship Images Painting via In
 
 ### Config file selection
 For SSDD dataset, please select the config file "config/sard.json"
+
 For HRSID dataset, please select the config file "config/sard_hrsid.json"
 
 ### Training/Resume Training
