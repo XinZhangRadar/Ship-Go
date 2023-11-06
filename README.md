@@ -5,15 +5,6 @@
 
 This is an official implementation of **Ship-Go: SAR Ship Images Painting via Instance-to-Image Generative Diffusion Models** by **Pytorch**, the code template is from the project: [Plattle](https://github.com/Janspiry/Palette-Image-to-Image-Diffusion-Models).
 
-## Status
-
-## Results
-
-The DDPM model requires significant computational resources, and we have only built a few example models to validate the ideas in this paper.
-
-### Visuals
-
-
 ### Pre-trained Model
 
 | Dataset   | Task       |  Epochs    | GPUs×Days×Bs | URL                                                          |
@@ -21,8 +12,6 @@ The DDPM model requires significant computational resources, and we have only bu
 | SSDD      | Painting   | 5000       | 1×5×2        | [Google Drive](https://drive.google.com/drive/folders/1ZhGBmnmGNdDClcEhsAUMR3SdxK3IM-PQ) |
 
 **Bs** indicates sample size per gpu.
-
-
 
 ### Data Prepare
 
