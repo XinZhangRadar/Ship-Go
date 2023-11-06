@@ -26,34 +26,27 @@ The DDPM model requires significant computational resources, and we have only bu
 
 ### Data Prepare
 
-- [SSDD](https://www.kaggle.com/datasets/badasstechie/celebahq-resized-256x256)
-- [HRSID](http://places2.csail.mit.edu/download.html) | [Places2 Kaggle](https://www.kaggle.com/datasets/nickj26/places2-mit-dataset?resource=download)
+- [SSDD](https://github.com/TianwenZhang0825/Official-SSDD)
+- [HRSID](https://github.com/chaozhong2010/HRSID) 
 
-
+### Config file selection
+For SSDD dataset, please select the config file "config/sard.json"
+For HRSID dataset, please select the config file "config/sard_hrsid.json"
 
 ### Training/Resume Training
 1. Download the checkpoints from given links.
-1. Set `resume_state` of configure file to the directory of previous checkpoint. Take the following as an example, this directory contains training states and saved model:
+2. Set `resume_state` of configure file to the directory of previous checkpoint. Take the following as an example, this directory contains training states and saved model:
 
 ```yaml
 "path": { //set every part file path
-	"resume_state": "experiments/inpainting_celebahq_220426_150122/checkpoint/100" 
+	"resume_state": "experiments/ssdd/checkpoint/5000" 
 },
 ```
-2. Set your network label in `load_everything` function of `model.py`, default is **Network**. Follow the tutorial settings, the optimizers and models will be loaded from 100.state and 100_Network.pth respectively.
+2. Run the script:
 
 ```python
-netG_label = self.netG.__class__.__name__
-self.load_network(network=self.netG, network_label=netG_label, strict=False)
+python run.py -p train -c config/sard.json
 ```
-
-3. Run the script:
-
-```python
-python run.py -p train -c config/inpainting_celebahq.json
-```
-
-We test the U-Net backbone used in `SR3` and `Guided Diffusion`,  and `Guided Diffusion` one have a more robust performance in our current experiments.  More choices about **backbone**, **loss** and **metric** can be found in `which_networks`  part of configure file.
 
 ### Test
 
@@ -61,9 +54,6 @@ We test the U-Net backbone used in `SR3` and `Guided Diffusion`,  and `Guided Di
 2. Set your model path following the steps in **Resume Training** part.
 3. Run the script:
 ```python
-python run.py -p test -c config/inpainting_celebahq.json
+python run.py -p test -c config/sard.json
 ```
 
-
-# Ship-Go
-# Ship-Go
