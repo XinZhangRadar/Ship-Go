@@ -1,4 +1,4 @@
-# Ship-Go: SAR Ship Images Painting via Instance-to-Image Generative Diffusion Models
+# Ship-Go: SAR Ship Images Inpainting via Instance-to-Image Generative Diffusion Models
 
 [Paper](... ) | 
 ## Introduce
