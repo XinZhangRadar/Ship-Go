@@ -47,3 +47,18 @@ python run.py -p train -c config/sard.json
 python run.py -p test -c config/sard.json
 ```
 
+
+## Citation
+
+```
+@article{zhang2024ship,
+  title={Ship-Go: SAR Ship Images Inpainting via instance-to-image Generative Diffusion Models},
+  author={Zhang, Xin and Li, Yang and Li, Feng and Jiang, Hangzhi and Wang, Yanhua and Zhang, Liang and Zheng, Le and Ding, Zegang},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={207},
+  pages={203--217},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
