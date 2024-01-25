@@ -25,7 +25,7 @@ For SSDD:
 ----Annotations_seg (includes seg annotations, .xml)
 ----images(includes sar images, .jpg)
 ----flist (includes train/test list, .flist)
-```yaml
+```
 
 ### Config file selection
 For SSDD dataset, please select the config file "config/sard.json"
