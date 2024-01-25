@@ -18,6 +18,14 @@ This is an official implementation of **Ship-Go: SAR Ship Images Painting via In
 - [SSDD](https://github.com/TianwenZhang0825/Official-SSDD)
 - [HRSID](https://github.com/chaozhong2010/HRSID) 
 
+For SSDD:
+-datasets
+--sargen
+----Annotations_seg (includes seg annotations, .xml)
+----images(includes sar images, .jpg)
+----flist (includes train/test list, .flist)
+
+
 ### Config file selection
 For SSDD dataset, please select the config file "config/sard.json"
 
