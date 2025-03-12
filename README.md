@@ -9,7 +9,7 @@ This is an official implementation of **Ship-Go: SAR Ship Images Painting via In
 
 | Dataset   | Task       |  Epochs    | GPUs×Days×Bs | URL                                                          |
 | --------- | ---------- | ---------- | ------------ | ------------------------------------------------------------ |
-| SSDD      | Inpainting   | 5000       | 1×5×2        | [Baidu Cloud](https://pan.baidu.com/s/17Tr6h7wWKjbmb849KNywpw?pwd=7y4s) |
+| SSDD      | Inpainting   | 5000       | 1×5×2        | [Baidu Cloud](https://pan.baidu.com/s/1lUwgrEeoK3ImvTM0MXTWbA?pwd=hrm3) |
 
 **Bs** indicates sample size per gpu.
 
