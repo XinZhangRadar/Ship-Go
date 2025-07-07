@@ -16,8 +16,10 @@ This is an official implementation of **Ship-Go: SAR Ship Images Painting via In
 ### Data Prepare
 
 - [SSDD](https://github.com/TianwenZhang0825/Official-SSDD)
+- [SSDD flist](https://pan.baidu.com/s/1RIiSN27eZVt6ugAHEIsVlw?pwd=cfk7)
 - [HRSID](https://github.com/chaozhong2010/HRSID)
 - [HRSID flist](https://pan.baidu.com/s/1PKfJ4YK4adADsc3Md0gfDA?pwd=ksjb)
+
 
 ```yaml
 For SSDD:
